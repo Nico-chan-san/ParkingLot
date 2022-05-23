@@ -1,0 +1,12 @@
+Parking space occupied: 18
+Vehicle license plate: QES782
+Date: Mon May 23 18:27:55 CEST 2022
+
+-----------------------------------------
+
+Parking space vacated: 18
+Vehicle license plate: QES782
+Date: Mon May 23 22:29:55 CEST 2022
+
+-----------------------------------------
+
