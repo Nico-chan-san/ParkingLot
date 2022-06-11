@@ -13,7 +13,7 @@ public class ParkingLot {
     for (int i = 1; i <= numFloors; i++) {
       ArrayList<ParkingSpot> floor = new ArrayList<ParkingSpot>(numSpots);
       for (int j = 1; j <= numSpots; j++) {
-        int spotId = j + ((i - 1) * 15);
+        int spotId = j + ((i - 1) * numSpots);
         floor.add(new ParkingSpot(spotId));
       }
       parkingSpots.add(floor);
@@ -22,7 +22,7 @@ public class ParkingLot {
 
   private ParkingSpot getParkingSpot(int id) throws Exception {
     if (id <= numFloors * numSpots && id > 0) {
-      int floorNumber = id / 15;
+      int floorNumber = id / numSpots;
       ArrayList<ParkingSpot> floor = parkingSpots.get(floorNumber);
       ParkingSpot spot = floor.get((id % numSpots) - 1);
       return spot;

@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class ParkingSystem {
 
   public static double calculateParkingFee(Date start, Date end) throws Exception {
-    double fee = 0;
+    double fee = 15;
     long diffInMilliseconds = (end.getTime() - start.getTime());
     if (diffInMilliseconds < 0) {
       throw new Exception("Invalid dates. Cannot park for negative duration.");

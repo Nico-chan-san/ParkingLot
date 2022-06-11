@@ -18,8 +18,8 @@ public class Main {
 
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/hh/mm/ss", Locale.ENGLISH);
     Date startTime = sdf.parse("2022/05/23/18/27/55");
-    Date endTime = sdf.parse("2022/05/23/22/29/55");
-    ParkingSystem.calculateParkingFee(startTime, endTime);
+    Date endTime = sdf.parse("2022/05/23/19/27/56");
+    // ParkingSystem.calculateParkingFee(startTime, endTime);
 
     Vehicle astroSurfer = new Vehicle("QES782");
 
